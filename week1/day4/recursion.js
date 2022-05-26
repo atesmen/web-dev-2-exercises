@@ -1,5 +1,14 @@
 //Print only items (emojis) in the console. Not the arrays.
-const printItems = function (array) {};
+const printItems = function (array) {
+  return array.forEach(element => {
+    if (Array.isArray(element)){
+      printItems(element);
+    }else{
+      console.log(element)
+    }
+
+  })
+};
 
 const array = ['😎', '💩', '🤗', '😼', '😂'];
 printItems(array);

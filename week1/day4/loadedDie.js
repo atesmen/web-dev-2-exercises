@@ -10,10 +10,10 @@ However, instead of a random die, we want to create a cheat die that would let u
 */
 function makeLoadedDie() {
   const list = [5, 4, 6, 1, 6, 4, 2, 3, 3, 5];
-  /* your code here */
+  let listIndex = -1
 
   return function () {
-    /* your code here */
+    return list[++listIndex % list.length]
   };
 }
 
