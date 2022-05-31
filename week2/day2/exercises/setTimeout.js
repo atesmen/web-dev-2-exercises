@@ -10,6 +10,9 @@ All of the words can appear at the same time.
 */
 
 //Code here...
+// setTimeout(() =>{
+//     console.log("4311o th3r3 w0r1d");
+// },3000)
 
 /*
 Challenge #2
@@ -22,3 +25,11 @@ It's okay if each of the words appears on a separate line, due to console.log.
 */
 
 //Code here...
+const str = "4311o th3r3 w0r1d";
+const words = str.split(" ");
+for(let i in words) {
+    
+    setTimeout(() =>{
+        process.stdout.write(words[i]+" ");
+    },1000 * i)
+}
