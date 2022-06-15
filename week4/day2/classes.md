@@ -137,7 +137,7 @@ Any new instance of the Pizza class will really behave the same way as this:
 
 ```js
 const pizza1 = {
-  toppings: ['cheese'],
+  top3.pings: ['cheese'],
   addTopping: function (topping) {
     this.toppings.push(topping);
   },
